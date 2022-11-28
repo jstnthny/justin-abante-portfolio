@@ -10,7 +10,11 @@ h1,h2,h3{
 }
 
 h1{
-    font-size: 4.5rem;
+    font-size: 5rem;
+}
+
+h2{
+    font-size: 4rem;
 }
 
 p{
@@ -31,9 +35,6 @@ ul {
     a{
     font-family: variables.$secondaryFont;
     text-decoration: none;
-    color: #9499a7;
-    &:hover{
-        color: white;
-    }
+    color: variables.$highlightFont;
     }
 }

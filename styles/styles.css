@@ -271,7 +271,7 @@ template {
 
 h1, h2, h3 {
   font-family: "Barlow Condensed", sans-serif;
-  color: #FAF9F6;
+  color: #463F3A;
   font-size: 2.6rem;
   margin: 0;
   letter-spacing: 1.1px;
@@ -279,12 +279,16 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 4.5rem;
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 4rem;
 }
 
 p {
   font-family: "Montserrat", sans-serif;
-  color: #FAF9F6;
+  color: #463F3A;
   margin: 0;
 }
 
@@ -302,10 +306,7 @@ li {
 li a {
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
-  color: #9499a7;
-}
-li a:hover {
-  color: white;
+  color: #8A817C;
 }
 
 .wrapper {
@@ -320,11 +321,11 @@ body {
 
 h1 {
   margin: 0;
-  color: #FAF9F6;
+  color: #463F3A;
 }
 
 header {
-  background-color: #34353A;
+  background-color: #f4f3ee;
   height: 75vh;
   -webkit-box-shadow: 0px 14px 15px -8px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 14px 15px -8px rgba(0, 0, 0, 0.75);
@@ -339,6 +340,7 @@ ul {
           justify-content: center;
   gap: 30px;
   padding: 50px 0 0 0;
+  text-transform: lowercase;
 }
 
 .main-heading-container {
@@ -346,13 +348,13 @@ ul {
 }
 
 .name-color {
-  color: #4185a8;
+  color: #8A817C;
 }
 
 .header-contact {
   text-decoration: none;
-  color: #4185a8;
-  border: 3px solid #4185a8;
+  color: #8A817C;
+  border: 3px solid #8A817C;
   border-radius: 5px;
   padding: 10px;
   margin-top: 15px;
@@ -362,8 +364,24 @@ ul {
   width: fit-content;
 }
 
+.header-social-icons {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+.header-social-icons i {
+  font-size: 2rem;
+}
+
 .about {
-  background-color: #31333B;
+  background-color: #f4f3ee;
 }
 .about h2 {
   margin: 0;
@@ -373,7 +391,7 @@ ul {
 }
 
 .skills {
-  background-color: #31333B;
+  background-color: #f4f3ee;
 }
 .skills h2 {
   text-align: center;
@@ -404,10 +422,10 @@ ul {
   padding: 50px;
   width: 200px;
   border-radius: 10px;
-  background-color: #34353A;
+  background-color: #f4f3ee;
 }
 .skills .icon-container:hover {
-  background-color: #4185a8;
+  background-color: #dad8cd;
 }
 .skills .icon-container i {
   font-size: 3.5rem;
@@ -419,7 +437,8 @@ ul {
 }
 
 .portfolio {
-  background-color: #31333B;
+  background-color: #f4f3ee;
+  padding: 30px;
 }
 .portfolio h2 {
   text-align: center;
@@ -437,15 +456,99 @@ ul {
   padding: 0;
 }
 .portfolio .project-container .portfolio-image-container {
-  width: 49%;
+  width: 39%;
 }
 .portfolio .project-container .portfolio-image-container img {
   width: 100%;
 }
 .portfolio .project-container .portfolio-text-container {
-  width: 49%;
+  width: 59%;
+}
+.portfolio .project-container .portfolio-text-container ul li {
+  text-transform: uppercase;
+  border: 2px solid #463F3A;
+  padding: 5px;
+  color: #463F3A;
+  margin: 5px 0;
+}
+.portfolio .project-container .portfolio-text-container a {
+  text-decoration: none;
+  color: #463F3A;
+  font-weight: bold;
+  margin: 10px 20px 0 0;
+  display: inline-block;
 }
 
 .contact {
-  background-color: #34353A;
+  background-color: #f4f3ee;
+  padding: 30px;
+}
+.contact h2 {
+  text-align: center;
+}
+.contact .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5rem;
+}
+.contact .wrapper .email-small {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.contact .wrapper .email-large {
+  font-size: 1.5rem;
+}
+.contact .wrapper ul {
+  -webkit-box-pack: normal;
+      -ms-flex-pack: normal;
+          justify-content: normal;
+  padding-top: 1rem;
+}
+.contact .wrapper ul i {
+  font-size: 2.5rem;
+}
+.contact form .form-row input, .contact form .form-row textarea {
+  background-color: #f4f3ee;
+  border: none;
+  border-bottom: 1px solid #463F3A;
+  padding: 20px 0 10px 10px;
+  color: #463F3A;
+  width: 100%;
+}
+.contact form .form-row input::-webkit-input-placeholder, .contact form .form-row textarea::-webkit-input-placeholder {
+  color: #463F3A;
+}
+.contact form .form-row input::-moz-placeholder, .contact form .form-row textarea::-moz-placeholder {
+  color: #463F3A;
+}
+.contact form .form-row input:-ms-input-placeholder, .contact form .form-row textarea:-ms-input-placeholder {
+  color: #463F3A;
+}
+.contact form .form-row input::-ms-input-placeholder, .contact form .form-row textarea::-ms-input-placeholder {
+  color: #463F3A;
+}
+.contact form .form-row input::placeholder, .contact form .form-row textarea::placeholder {
+  color: #463F3A;
+}
+.contact form .form-row textarea {
+  resize: none;
+}
+.contact form button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #8A817C;
+  border: 1px solid #8A817C;
+  border-radius: 5px;
+  color: white;
+  width: content;
+}
+
+footer {
+  background-color: #f4f3ee;
+  text-align: center;
+  padding: 50px 0 15px 0;
 }

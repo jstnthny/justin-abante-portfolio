@@ -3,8 +3,19 @@ $primaryFont: 'Barlow Condensed', sans-serif;
 $secondaryFont: 'Montserrat', sans-serif;
 
 //Colours
-$mainColour: #34353A;
-$secondaryColour: #31333B; 
+// MAIN COLOURS
+// $mainColour: #34353A; -- Original
+// $mainColour: #171920; -- This one is okay?
+// $mainColour: #232323; -- Dark theme really dope and cool 
+$mainColour: #f4f3ee;
+// SECONDARY COLOURS
+// $secondaryColour: #31333B; -- Original
+// $secondaryColour: #1e212c; -- This one is oaky?
+// $secondaryColour: #343434; -- Dark theme really dope and cool
+$secondaryColour:#f4f3ee;
 // $highlightFont: #FFC86B; 
-$highlightFont: #4185a8;
-$textFont: #FAF9F6;
+// $highlightFont: #4185a8; -- Blueish one
+// $highlightFont : #9cb4a7; -- Greenish one
+$highlightFont: #8A817C;
+// $textFont: #FAF9F6; -- White
+$textFont: #463F3A;

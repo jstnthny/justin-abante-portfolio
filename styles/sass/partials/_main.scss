@@ -31,6 +31,7 @@ ul{
     justify-content: center;
     gap: 30px;
     padding: 50px 0 0 0;
+    text-transform: lowercase;
 }
 
 .main-heading-container{
@@ -50,6 +51,15 @@ ul{
     margin-top: 15px;
     display: block;
     width: fit-content;
+}
+
+.header-social-icons{
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: end;
+        i{
+        font-size: 2rem;
+    }
 }
 
 // About
@@ -90,7 +100,8 @@ ul{
         border-radius: 10px;
         background-color: variables.$mainColour;
         &:hover{
-            background-color: variables.$highlightFont;
+            // background-color: variables.$highlightFont; 
+            background-color: #dad8cd;
         }
         i{
             font-size: 3.5rem;
@@ -107,6 +118,7 @@ ul{
 
 .portfolio{
     background-color: variables.$secondaryColour;
+    padding: 30px;
     h2{
         text-align: center;
     }
@@ -118,19 +130,95 @@ ul{
             padding: 0;
         }
         .portfolio-image-container{
-            width: 49%;
+            width: 39%;
             img{
                 width:100%;
             }
         }
         .portfolio-text-container{
-            width: 49%;
+            width: 59%;
+            ul{
+                li{
+                    text-transform: uppercase;
+                    border: 2px solid variables.$textFont;
+                    padding: 5px;
+                    color: variables.$textFont;
+                    margin: 5px 0;
+                }
+            }
+                a{
+                    text-decoration: none;
+                    color: variables.$textFont;
+                    font-weight: bold;
+                    margin: 10px 20px 0 0;
+                    display: inline-block;
+            }
+        }
+              
         }
     }
-}
+
 
 // Contact
 
 .contact{
     background-color: variables.$mainColour;
+    padding: 30px;
+    h2{
+        text-align: center;
+    }
+    .wrapper{
+        display: flex;
+        justify-content:center;
+        gap: 5rem;
+        .email-small{
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+        .email-large{
+            font-size: 1.5rem;
+        }
+        ul{
+            justify-content: normal;
+            padding-top: 1rem;
+            i{
+                font-size: 2.5rem;
+            }
+        }
+    }
+    form{
+        .form-row{
+            input, textarea{
+                background-color: variables.$mainColour;
+                border: none;
+                border-bottom: 1px solid variables.$textFont;
+                padding: 20px 0 10px 10px;
+                color: variables.$textFont;
+                width: 100%;
+                &::placeholder{
+                  color: variables.$textFont;  
+                }
+            }
+            textarea{
+                resize: none;
+            }
+        }
+        button{
+            margin-top: 10px;
+            padding: 10px;
+            background-color: variables.$highlightFont;
+            border: 1px solid variables.$highlightFont;
+            border-radius: 5px;
+            color: white;
+            width: content;
+        }
+    }
+}
+
+// Footer
+
+footer{
+    background-color: variables.$mainColour;
+    text-align: center;
+    padding: 50px 0 15px 0;
 }
