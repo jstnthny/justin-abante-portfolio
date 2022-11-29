@@ -16,17 +16,19 @@
     <header>
         <div class="wrapper">
             <nav>
-                <ul>
+                <div class="open-menu"><i class="fa fa-bars"></i></div>
+                <ul class="nav-items">
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <div class="close-menu"><i class="fa fa-times"></i></div>
                 </ul>
             </nav>
             <div class="main-heading-container">
-                <h1>Hi I'm <span class="name-color">Justin Abante</span>
-                    <!-- DELETE THIS AFTER BECAUSE WE DONT USE BR's ANYMORE -->
-                  <br/> <span>Web Developer</span>
+                <h1>
+                    <span class="name-color">Justin Abante</span>
+                    <span class="heading-title">Web Developer</span>
                 </h1>
                 <a class="header-contact" href="#contact">Contact Me</a>
             </div>
@@ -124,8 +126,9 @@
                     </div>
                 </div>
                 <!-- End of Project -->
+                <!-- Start of Project -->
                  <div class="project-container">
-                    <div class="portfolio-text-container">
+                    <div class="portfolio-text-container sanctuary-helpers">
                         <h3>Sanctuary Helpers</h3>
                         <ul>
                             <li>HTML</li>
@@ -140,6 +143,26 @@
                         <img src="./assets/sanctuaryHelpers-imac.png" alt="An image preview for the Santuary Helpers website">
                     </div>
                 </div>
+                <!-- End Of Project -->
+                <!-- Start of Project -->
+                <div class="project-container">
+                    <div class="portfolio-image-container">
+                        <img src="./assets/li-zhang-MD11tTqX6HM-unsplash.jpg" alt="Image preview for the app MovieFlix">
+                    </div>
+                    <div class="portfolio-text-container">
+                        <h3>MovieFlix &#127916;</h3>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>SASS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem architecto pariatur labore quidem nemo fuga dolore perferendis ducimus doloribus aspernatur!</p>
+                        <a href="#">Code</a>
+                        <a href="#">Live Site</a>
+                    </div>
+                </div>
+                <!-- End of Project -->
             </div>
             </section>
             <section id="contact" class="contact">
@@ -148,6 +171,8 @@
                     <div class="contact-details">    
                         <p class="email-small">Email</p>
                         <p class="email-large">justin.abante@gmail.com</p>
+                        <p class="location-small">Location</p>
+                        <p class="location-large">Toronto, Ontario</p>
                         <ul>
                             <li>
                                 <a href="#"><i class="devicon-linkedin-plain"></i></a>
@@ -164,7 +189,7 @@
                             </li>
                         </ul>
                     </div>
-                    <form action="" method="POST" class="contact-form" id="contac-form">
+                    <form action="" method="POST" class="contact-form" id="contact-form">
                     <!-- Name -->
                         <div class="form-row">
                             <input type="text" name="name" id="name" class="form-input" required="" placeholder="Name">
@@ -193,6 +218,6 @@
     <footer>
         <p>Juno College 2022, Justin Abante</p>
     </footer>
-    
+    <script src="app.js"></script>
 </body>
 </html>

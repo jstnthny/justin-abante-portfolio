@@ -14,24 +14,58 @@ body{
 h1{
     margin: 0;
     color: variables.$textFont;
+    text-align: center;
 }
 
 // Header
 
 header{
     background-color: variables.$mainColour;
-    height: 75vh;
-    -webkit-box-shadow: 0px 14px 15px -8px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 14px 15px -8px rgba(0,0,0,0.75);
-    box-shadow: 0px 14px 15px -8px rgba(0,0,0,0.75);
+    height: 80vh;
 }
-
 ul{
     display: flex;
     justify-content: center;
     gap: 30px;
     padding: 50px 0 0 0;
+}
+
+ .open-menu{
+        font-size: 2rem;
+        margin: 20px;
+        display: none;
+        cursor: pointer;
+    }
+
+.close-menu{
+    cursor: pointer;
+    font-size: 2rem;
+    display: none;
+}
+
+.nav-items{
     text-transform: lowercase;
+    a{
+        position: relative;
+        padding: 0 10px;
+    }
+   
+    a:after{
+        content: "";
+        position: absolute;
+        background-color: black;
+        height: 1.5px;
+        width: 0;
+        left: 0;
+        bottom: -5px;
+        transition: 0.3s;
+    }
+    a:hover{
+        color: variables.$textFont;
+    }
+    a:hover:after{
+        width: 100%;
+    }
 }
 
 .main-heading-container{
@@ -42,15 +76,24 @@ ul{
     color: variables.$highlightFont;
 }
 
+.heading-title{
+    display: block;
+}
+
 .header-contact{
     text-decoration: none;
     color: variables.$highlightFont;
     border: 3px solid variables.$highlightFont;
     border-radius: 5px;
     padding: 10px;
-    margin-top: 15px;
+    margin: 15px auto;
     display: block;
     width: fit-content;
+    text-align: center;
+    &:hover{
+        background-color: variables.$highlightFont;
+        color: variables.$mainColour;
+    }
 }
 
 .header-social-icons{
@@ -170,12 +213,13 @@ ul{
     .wrapper{
         display: flex;
         justify-content:center;
-        gap: 5rem;
-        .email-small{
+        gap: 10rem;
+        .email-small, .location-small{
             font-size: 1rem;
             text-transform: uppercase;
+            margin: 10px 0;
         }
-        .email-large{
+        .email-large, .location-large{
             font-size: 1.5rem;
         }
         ul{
@@ -192,7 +236,7 @@ ul{
                 background-color: variables.$mainColour;
                 border: none;
                 border-bottom: 1px solid variables.$textFont;
-                padding: 20px 0 10px 10px;
+                padding: 20px 80px 10px 10px;
                 color: variables.$textFont;
                 width: 100%;
                 &::placeholder{
@@ -211,6 +255,7 @@ ul{
             border-radius: 5px;
             color: white;
             width: content;
+            cursor: pointer;
         }
     }
 }
