@@ -333,6 +333,9 @@ header {
   background-color: #edede9;
   height: 80vh;
 }
+header nav {
+  margin-top: 50px;
+}
 
 ul {
   display: -webkit-box;
@@ -348,7 +351,6 @@ ul {
 
 .open-menu {
   font-size: 2rem;
-  margin: 20px;
   display: none;
   cursor: pointer;
 }
@@ -639,7 +641,7 @@ footer {
   .open-menu {
     display: block;
     margin: 0;
-    padding-top: 50px;
+    padding-top: 20px;
   }
   .nav-items a:hover {
     background: none;

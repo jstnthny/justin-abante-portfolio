@@ -23,6 +23,9 @@ h1{
 header{
     background-color: variables.$mainColour;
     height: 80vh;
+    nav{
+        margin-top: 50px;
+    }
 }
 ul{
     display: flex;
@@ -34,7 +37,6 @@ ul{
 
  .open-menu{
         font-size: 2rem;
-        margin: 20px;
         display: none;
         cursor: pointer;
     }
