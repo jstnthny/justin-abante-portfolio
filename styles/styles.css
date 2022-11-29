@@ -603,7 +603,7 @@ footer {
   padding: 50px 0 15px 0;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   .nav-items {
     height: 100vh;
     position: fixed;
@@ -646,6 +646,9 @@ footer {
     -webkit-transition: none;
     transition: none;
     position: static;
+  }
+  .main-heading-container {
+    padding-top: 0rem;
   }
   .about h2 {
     text-align: center;
@@ -693,5 +696,17 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 1rem;
+  }
+}
+@media (max-width: 550px) {
+  header {
+    height: 100vh;
+  }
+  .header-social-icons {
+    padding: 0;
+  }
+  .portfolio-text-container ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }

@@ -4,7 +4,7 @@
 
 // Tablet View 
 
-@media(max-width: 800px){
+@media(max-width: 850px){
     .nav-items{
         height: 100vh;
         position: fixed;
@@ -45,6 +45,10 @@
             
         }
     }
+
+      .main-heading-container{
+        padding-top: 0rem;
+        }
 
     // About
 
@@ -96,4 +100,21 @@
             gap: 1rem;
         }
     }
+}
+
+@media(max-width: 550px){
+    header{
+        height: 100vh;
+    }
+
+    .header-social-icons{
+        padding: 0;
+    }
+
+    .portfolio-text-container{
+        ul{
+            flex-wrap: wrap;
+        }
+    }
+
 }
