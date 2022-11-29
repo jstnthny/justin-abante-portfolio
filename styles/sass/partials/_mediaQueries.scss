@@ -5,6 +5,13 @@
 // Tablet View 
 
 @media(max-width: 850px){
+
+    header{
+        nav{
+        margin-top: 70px;
+        }
+    }
+
     .nav-items{
         height: 100vh;
         position: fixed;
@@ -34,6 +41,8 @@
         display: block;
         margin: 0;
         padding-top: 20px;
+        position: fixed;
+        top: 20px;
     }
     .nav-items{
         a:hover{
