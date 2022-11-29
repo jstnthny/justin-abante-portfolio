@@ -320,6 +320,7 @@ li a:hover {
 
 body {
   font-size: 125%;
+  background-color: #edede9;
 }
 
 h1 {
@@ -341,7 +342,8 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 30px;
-  padding: 50px 0 0 0;
+  padding: 20px 0 0 0;
+  margin-top: 10px;
 }
 
 .open-menu {
@@ -610,7 +612,7 @@ footer {
     top: 0;
     right: 0;
     left: 0;
-    z-index: 10;
+    z-index: 1;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

@@ -9,6 +9,7 @@
 
 body{
     font-size: 125%;
+    background-color: variables.$mainColour;
 }
 
 h1{
@@ -27,7 +28,8 @@ ul{
     display: flex;
     justify-content: center;
     gap: 30px;
-    padding: 50px 0 0 0;
+    padding: 20px 0 0 0;
+    margin-top: 10px;
 }
 
  .open-menu{
