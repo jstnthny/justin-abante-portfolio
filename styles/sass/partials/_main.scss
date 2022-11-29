@@ -9,7 +9,6 @@
 
 body{
     font-size: 125%;
-    background-color: variables.$mainColour;
 }
 
 h1{
@@ -21,8 +20,11 @@ h1{
 // Header
 
 header{
-    background-color: variables.$mainColour;
-    height: 80vh;
+    // background-color: variables.$mainColour;
+    background: rgb(237,237,233);
+    background: linear-gradient(0deg, rgba(237,237,233,1) 0%, rgba(201,201,198,1) 100%);
+    height: 100vh;
+    overflow: auto;
     nav{
         margin-top: 40px;
     }
@@ -40,6 +42,8 @@ ul{
         display: none;
         cursor: pointer;
     }
+
+
 
 .close-menu{
     cursor: pointer;
@@ -118,6 +122,13 @@ ul{
     }
     .about-text-container{
     margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    p{
+        line-height:1.3;
+        letter-spacing: 1.5px;
+    }
     }
   
 }
@@ -192,18 +203,25 @@ ul{
                     color: variables.$textFont;
                     margin: 5px 0;
                 }
+               
             }
+            p{
+                line-height: 1.5;
                 a{
-                    text-decoration: none;
-                    color: variables.$textFont;
-                    font-weight: bold;
-                    margin: 10px 20px 0 0;
-                    display: inline-block;
+                    margin: 0;
+                }
+            }
+            a{
+                text-decoration: none;
+                color: variables.$textFont;
+                font-weight: bold;
+                margin: 10px 20px 0 0;
+                display: inline-block;
             }
         }
               
-        }
     }
+}
 
 
 // Contact

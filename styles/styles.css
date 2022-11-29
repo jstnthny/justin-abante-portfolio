@@ -320,7 +320,6 @@ li a:hover {
 
 body {
   font-size: 125%;
-  background-color: #edede9;
 }
 
 h1 {
@@ -330,8 +329,11 @@ h1 {
 }
 
 header {
-  background-color: #edede9;
-  height: 80vh;
+  background: rgb(237, 237, 233);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(237, 237, 233)), to(rgb(201, 201, 198)));
+  background: linear-gradient(0deg, rgb(237, 237, 233) 0%, rgb(201, 201, 198) 100%);
+  height: 100vh;
+  overflow: auto;
 }
 header nav {
   margin-top: 40px;
@@ -440,6 +442,18 @@ ul {
 }
 .about .about-text-container {
   margin-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+}
+.about .about-text-container p {
+  line-height: 1.3;
+  letter-spacing: 1.5px;
 }
 
 .skills {
@@ -522,6 +536,12 @@ ul {
   padding: 5px;
   color: #463F3A;
   margin: 5px 0;
+}
+.portfolio .project-container .portfolio-text-container p {
+  line-height: 1.5;
+}
+.portfolio .project-container .portfolio-text-container p a {
+  margin: 0;
 }
 .portfolio .project-container .portfolio-text-container a {
   text-decoration: none;
@@ -608,9 +628,6 @@ footer {
 }
 
 @media (max-width: 850px) {
-  header nav {
-    margin-top: 70px;
-  }
   .nav-items {
     height: 100vh;
     position: fixed;
