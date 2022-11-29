@@ -13,7 +13,7 @@ body{
 
 h1{
     margin: 0;
-    color: variables.$textFont;
+    color: variables.$textFontColour;
     text-align: center;
 }
 
@@ -24,7 +24,7 @@ header{
     background: rgb(237,237,233);
     background: linear-gradient(0deg, rgba(237,237,233,1) 0%, rgba(201,201,198,1) 100%);
     height: 100vh;
-    overflow: auto;
+    overflow: hidden;
     nav{
         margin-top: 40px;
     }
@@ -69,7 +69,7 @@ ul{
         transition: 0.3s;
     }
     a:hover{
-        color: variables.$textFont;
+        color: variables.$textFontColour;
     }
     a:hover:after{
         width: 100%;
@@ -81,7 +81,7 @@ ul{
 }
 
 .name-color{
-    color: variables.$highlightFont;
+    color: variables.$highlightFontColour;
 }
 
 .heading-title{
@@ -90,8 +90,8 @@ ul{
 
 .header-contact{
     text-decoration: none;
-    color: variables.$highlightFont;
-    border: 3px solid variables.$highlightFont;
+    color: variables.$highlightFontColour;
+    border: 3px solid variables.$highlightFontColour;
     border-radius: 5px;
     padding: 10px;
     margin: 15px auto;
@@ -99,7 +99,7 @@ ul{
     width: fit-content;
     text-align: center;
     &:hover{
-        background-color: variables.$highlightFont;
+        background-color: variables.$highlightFontColour;
         color: variables.$mainColour;
     }
 }
@@ -116,7 +116,7 @@ ul{
 // About
 
 .about{
-    background-color: variables.$secondaryColour;
+    background-color: variables.$mainColour;
     h2{
         margin: 0;
     }
@@ -138,7 +138,7 @@ ul{
 // Skills
 
 .skills{
-    background-color: variables.$secondaryColour;
+    background-color: variables.$mainColour;
     h2{
         text-align: center;
         padding: 40px 0;
@@ -158,7 +158,6 @@ ul{
         border-radius: 10px;
         background-color: variables.$mainColour;
         &:hover{
-            // background-color: variables.$highlightFont; 
             background-color: #dad8cd;
         }
         i{
@@ -175,10 +174,11 @@ ul{
 // Portfolio
 
 .portfolio{
-    background-color: variables.$secondaryColour;
+    background-color: variables.$mainColour;
     padding: 30px;
     h2{
         text-align: center;
+        margin-bottom: 50px;
     }
     .project-container{
         display: flex;
@@ -198,9 +198,9 @@ ul{
             ul{
                 li{
                     text-transform: uppercase;
-                    border: 2px solid variables.$textFont;
+                    border: 2px solid variables.$textFontColour;
                     padding: 5px;
-                    color: variables.$textFont;
+                    color: variables.$textFontColour;
                     margin: 5px 0;
                 }
                
@@ -213,7 +213,7 @@ ul{
             }
             a{
                 text-decoration: none;
-                color: variables.$textFont;
+                color: variables.$textFontColour;
                 font-weight: bold;
                 margin: 10px 20px 0 0;
                 display: inline-block;
@@ -257,12 +257,12 @@ ul{
             input, textarea{
                 background-color: variables.$mainColour;
                 border: none;
-                border-bottom: 1px solid variables.$textFont;
+                border-bottom: 1px solid variables.$textFontColour;
                 padding: 20px 80px 10px 10px;
-                color: variables.$textFont;
+                color: variables.$textFontColour;
                 width: 100%;
                 &::placeholder{
-                  color: variables.$textFont;  
+                  color: variables.$textFontColour;  
                 }
             }
             textarea{
@@ -272,8 +272,8 @@ ul{
         button{
             margin-top: 10px;
             padding: 10px;
-            background-color: variables.$highlightFont;
-            border: 1px solid variables.$highlightFont;
+            background-color: variables.$highlightFontColour;
+            border: 1px solid variables.$highlightFontColour;
             border-radius: 5px;
             color: white;
             width: content;

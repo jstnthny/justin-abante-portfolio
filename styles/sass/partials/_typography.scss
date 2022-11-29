@@ -2,7 +2,7 @@
 
 h1,h2,h3{
     font-family: variables.$primaryFont;
-    color: variables.$textFont;
+    color: variables.$textFontColour;
     font-size: 2.6rem;
     margin: 0;
     letter-spacing: 1.1px;
@@ -19,7 +19,7 @@ h2{
 
 p{
     font-family: variables.$secondaryFont;
-    color: variables.$textFont;
+    color: variables.$textFontColour;
     margin: 0;
 }
 
@@ -35,9 +35,9 @@ ul {
     a{
     font-family: variables.$secondaryFont;
     text-decoration: none;
-    color: variables.$highlightFont;
+    color: variables.$textFontColour;
     &:hover{
-        color: variables.$textFont;
+        color: variables.$textFontColour;
     }
     }
 }

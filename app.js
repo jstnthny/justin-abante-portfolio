@@ -20,4 +20,4 @@ portfolio.func = () =>{
 }
 
 portfolio.init();
-
+AOS.init();
