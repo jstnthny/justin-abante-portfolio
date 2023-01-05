@@ -312,6 +312,10 @@ li a:hover {
   color: #463F3A;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .wrapper {
   margin: 0 auto;
   width: 85%;
@@ -320,6 +324,7 @@ li a:hover {
 
 body {
   font-size: 125%;
+  background-color: #CBCBC8;
 }
 
 h1 {
@@ -630,12 +635,12 @@ footer {
 
 @media (max-width: 850px) {
   .nav-items {
-    height: 100vh;
+    height: 95vh;
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
-    z-index: 1;
+    z-index: 10;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -644,9 +649,10 @@ footer {
         -ms-flex-align: center;
             align-items: center;
     background: #edede9;
-    -webkit-transition: top 1s ease;
-    transition: top 1s ease;
+    -webkit-transition: top 1s ease 0s;
+    transition: top 1s ease 0s;
     display: none;
+    margin-top: 0;
   }
   .header-social-icons {
     -webkit-box-align: center;

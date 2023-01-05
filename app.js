@@ -13,6 +13,7 @@ portfolio.func = () =>{
     openNav.addEventListener('click', () => {
         navMenu.style.display = 'flex';
         navMenu.style.top = "0";
+        // navMenu.style.transition = 'top 1s ease 0s';
     });
     closeNav.addEventListener('click', () => {
         navMenu.style.top = '-100%';

@@ -1,5 +1,8 @@
 @use "./variables";
 
+html{
+    scroll-behavior: smooth;
+}
 
 .wrapper {
     margin: 0 auto;
@@ -9,6 +12,7 @@
 
 body{
     font-size: 125%;
+    background-color: #CBCBC8;
 }
 
 h1{
@@ -37,13 +41,12 @@ ul{
     margin-top: 10px;
 }
 
+
  .open-menu{
         font-size: 2rem;
         display: none;
         cursor: pointer;
     }
-
-
 
 .close-menu{
     cursor: pointer;
