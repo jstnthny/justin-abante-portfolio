@@ -649,8 +649,6 @@ footer {
         -ms-flex-align: center;
             align-items: center;
     background: #edede9;
-    -webkit-transition: top 1s ease 0s;
-    transition: top 1s ease 0s;
     display: none;
     margin-top: 0;
   }
