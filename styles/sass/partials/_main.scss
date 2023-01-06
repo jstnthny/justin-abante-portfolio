@@ -13,8 +13,6 @@ html{
 
 body{
     font-size: 125%;
-    // background-color: #CBCBC8;
-    overflow-x: hidden;
 }
 
 h1{
@@ -26,7 +24,6 @@ h1{
 // Header
 
 header{
-    // background-color: variables.$mainColour;
     background: rgb(237,237,233);
     background: linear-gradient(0deg, rgba(237,237,233,1) 0%, rgba(201,201,198,1) 100%);
     height: 100vh;
