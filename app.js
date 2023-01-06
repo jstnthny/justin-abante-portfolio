@@ -5,19 +5,12 @@ portfolio.init = () => {
 }
 
 portfolio.func = () =>{
-    const navMenu = document.querySelector('.nav-items');
-    const closeNav = document.querySelector('.close-menu');
-    const openNav = document.querySelector('.open-menu');
+    const hamburger = document.getElementById('hamburger');
+    const navItems = document.querySelector('.nav-items');
 
-
-    openNav.addEventListener('click', () => {
-        navMenu.style.display = 'flex';
-        navMenu.style.top = "0";
-        // navMenu.style.transition = 'top 1s ease 0s';
-    });
-    closeNav.addEventListener('click', () => {
-        navMenu.style.top = '-100%';
-    });
+    hamburger.addEventListener('click', () =>{
+        navItems.classList.toggle('show')
+    })
 }
 
 portfolio.init();

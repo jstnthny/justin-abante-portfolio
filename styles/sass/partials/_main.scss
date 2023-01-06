@@ -43,17 +43,16 @@ ul{
     margin-top: 10px;
 }
 
-
- .open-menu{
-        font-size: 2rem;
-        display: none;
-        cursor: pointer;
-    }
-
-.close-menu{
-    cursor: pointer;
-    font-size: 2rem;
+.hamburger{
+    background-color: transparent;
+    border: 0;
     display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.hamburger:focus{
+    outline: none;
 }
 
 .nav-items{
