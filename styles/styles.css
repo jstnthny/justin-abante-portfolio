@@ -269,6 +269,10 @@ template {
   text-align: center;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 h1, h2, h3 {
   font-family: "Barlow Condensed", sans-serif;
   color: #463F3A;
@@ -314,7 +318,6 @@ li a:hover {
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 .wrapper {
@@ -325,6 +328,7 @@ html {
 
 body {
   font-size: 125%;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -589,6 +593,12 @@ ul {
 }
 .contact .wrapper ul i {
   font-size: 2.5rem;
+}
+.contact .wrapper .contact-details {
+  overflow-x: hidden;
+}
+.contact form {
+  overflow-x: hidden;
 }
 .contact form .form-row input, .contact form .form-row textarea {
   background-color: #edede9;
