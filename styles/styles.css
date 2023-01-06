@@ -366,9 +366,15 @@ ul {
   font-size: 1.5rem;
   cursor: pointer;
 }
+.hamburger i {
+  color: black;
+}
 
 .hamburger:focus {
   outline: none;
+}
+.hamburger:focus i {
+  color: black;
 }
 
 .nav-items {
