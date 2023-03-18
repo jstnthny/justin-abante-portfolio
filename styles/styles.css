@@ -565,6 +565,9 @@ ul {
   margin: 10px 20px 0 0;
   display: inline-block;
 }
+.portfolio .project-container .portfolio-text-container a:hover {
+  border-bottom: 1px solid black;
+}
 
 .contact {
   background-color: #edede9;

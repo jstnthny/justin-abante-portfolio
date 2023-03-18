@@ -225,6 +225,9 @@ ul{
                 font-weight: bold;
                 margin: 10px 20px 0 0;
                 display: inline-block;
+                &:hover{
+                    border-bottom: 1px solid black;
+                }
             }
         }
               
