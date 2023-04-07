@@ -702,7 +702,7 @@ footer {
             align-items: center;
   }
   .portfolio .project-container .portfolio-image-container {
-    width: 60%;
+    width: 100%;
   }
   .portfolio .project-container .portfolio-text-container {
     width: 100%;
@@ -720,6 +720,16 @@ footer {
     display: block;
     text-align: center;
     margin: 10px;
+  }
+  .portfolio .two > .portfolio-text-container {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .portfolio .four > .portfolio-text-container {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .sanctuary-helpers {
     -webkit-box-ordinal-group: 3;
